@@ -1,0 +1,72 @@
+.rodape {
+    width: 80%;
+    display: flex;
+    padding: 4rem 3rem 2rem 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.rodape__links-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--font-textos);
+}
+
+.rodape__titulo {
+    font-family: var(--font-titulos);
+    color: black;
+    margin-top: 1.5rem;
+}
+
+.rodape-link {
+    text-decoration: none;
+    color: black;
+}
+
+.rodape-link:hover {
+    text-decoration: black;
+}
+
+.rodape__linha {
+    height: 1px;
+    width: 80%;
+    background: black;
+    margin: 0 0 1rem 1.5rem;
+}
+
+.pagamento {
+    font-family: var(--font-textos);
+    margin: 0 2rem 1rem 2rem;
+}
+
+.rodape-pagamentos {
+    background: linear-gradient(to bottom, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE);
+    padding: 2rem;
+}
+
+.rodape__linha {
+    background: linear-gradient(to bottom, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE);
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 680px) {
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .rodape-pagamentos {
+        text-align: center;
+    }
+
+    .rodape__linha {
+        margin: 0;
+    }
+}

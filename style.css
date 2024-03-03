@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url(styles.css/header.css);
+@import url(styles.css/business.css);
+@import url(styles.css/trade.css);
+@import url(styles.css/footer.css);
+@import url(styles.css/products.css);
+
+:root {
+    --font-titulos: 'Krona one', sans-serif;
+    --font-textos: 'Montserrat', sans-serif;
+
+    --color-principal: black;
+    --color-azul-claro: #bebebe;
+    --color-azul-medio: #68709c;
+    --color-azul-escuro: #586197;
+}
+
+body {
+    box-sizing: border-box;
+    color: black;
+    width: 100%;
+}

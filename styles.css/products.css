@@ -1,0 +1,116 @@
+
+.products__tittle {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    font-family: var(--font-titulos);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.products__sub-tittle {
+    color: var(--color-principal);
+    font-family: var(--font-titulos);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.products-btn {
+    padding: 1rem;
+    border: none;
+    width: 50%;
+    border-radius: 2rem;
+    transition: 1.5s;
+    background: #7eef82;
+}
+
+.products-btn1 {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-textos);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.products__bloc {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.bloc2 {
+    width: 18rem;
+    height: 18rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.products__tittle-1 {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    font-family: var(--font-titulos);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (min-width: 360px) and (max-width:700px) {
+    .products__bloc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products-bloc1 {
+        width: calc(50% - 20px);
+        /* Define a largura para formar 2 colunas */
+        margin: 10px;
+        /* Adiciona espaçamento entre os blocos */
+        border: none;
+    }
+
+    .bloc2 {
+        width: 18rem;
+        height: 18rem; 
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1250px) {
+    .products__bloc {
+        grid-template-columns: repeat(1, 1fr); /* Em telas entre 700px e 1250px, uma coluna */
+
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products-bloc1 {
+        border: none;
+
+
+        width: calc(50% - 20px);
+        /* Define a largura para formar 2 colunas */
+        margin: 10px;
+        /* Adiciona espaçamento entre os blocos */
+    }
+
+    .bloc2 {
+        width: 18rem;
+        height: 18rem; 
+    }
+
+    .products-btn {
+        width: 20%;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+}

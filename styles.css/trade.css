@@ -1,0 +1,142 @@
+.trade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
+    background: linear-gradient(to top, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE);
+}
+
+.trade-lt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.trade-title {
+    font-family: var(--font-titulos);
+    font-size: 2rem;
+    color: var(--color-azul-escuro);
+}
+
+.trade-text {
+    font-family: var(--font-textos);
+    font-size: 1.5rem;
+    padding: 2rem 0 1.5rem 0;
+    color: var(--color-azul-medio);
+}
+
+.trade-text1 {
+    font-family: var(--font-textos);
+    font-size: 1rem;
+    color: var(--color-principal);
+}
+
+.tradebloc .tradebloc1 {
+    display: flex;
+    width: 50%;
+}
+
+.bloc1 {
+    width: 14rem;
+    height: 16rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.trade-btn {
+    margin-top: 5rem;
+    padding: 1.6rem;
+    width: 40%;
+    border: none;
+    background: var(--color-azul-medio);
+    border-radius: 1.5rem;
+    font-family: var(--font-titulos);
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.trade-btn-a {
+    text-decoration: none;
+    color: white;
+}
+
+.trade-btn:hover {
+    width: 45%;
+    background: var(--color-azul-escuro);
+    transition: .6s;
+}
+
+.bloc-img {
+    border: none;
+    background: url(../imagens/img-trade/Muletas.jpg);
+    transition: .2s;
+}
+
+.bloc-img:hover {
+    transition: .5s;
+    height: 250px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+    .trade-lt {
+        text-align: center;
+        margin-top: 0;
+        /* Espaçamento no topo */
+        margin-bottom: 0;
+        /* Espaçamento na parte inferior */ 
+    }
+
+    .trade-title {
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
+
+    .trade-text {
+        margin: 0.5rem;
+        margin-left: 3rem;
+    }
+
+    .trade-text1 {
+        margin-bottom: 1rem;
+        /* Adiciona espaçamento entre os elementos */
+        padding: 1rem;
+        margin-left: 3rem;
+    }
+
+    .tradebloc {
+        display: none;
+    }
+
+    .bloc1 {
+        display: none;
+        width: calc(25% - 20px);
+        /* Define a largura para formar 4 colunas */
+        margin: 10px;
+        /* Adiciona espaçamento entre os blocos */
+    }
+
+    .bloc-img {
+        width: 100%;
+        /* Garante que a imagem ocupe toda a largura do bloco */
+        height: auto;
+        /* Mantém a proporção da imagem */
+    }
+
+    .trade-btn {
+        width: 80%;
+        margin: 1rem;
+        margin-left: 3.3rem;
+    }
+
+    .trade-btn:hover {
+        width: 90%;
+    }
+
+    .trade {
+        width: 100%;
+    }
+}

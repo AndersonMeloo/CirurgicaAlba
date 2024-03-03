@@ -1,0 +1,142 @@
+.support {
+    background: #bebebe;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: .5rem 2rem;
+    text-align: center;
+}
+
+.support-2 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header {
+    width: 90%;
+    height: 2.5rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 2rem 6rem;
+    align-items: center;
+}
+
+.header-1 {
+    display: inline-flex;
+    gap: 1rem;
+
+}
+
+.header-title {
+    font-family: var(--font-titulos);
+    border-radius: 2rem;
+    width: 5rem;
+    text-align: center;
+    height: 1.5rem;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-title {
+    border: none;
+    background: #d6dce6;
+    color: black;
+    border-radius: 1rem;
+}
+
+.header-text {
+    font-family: var(--font-textos);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.header-logo {
+    font-family: var(--font-titulos);
+
+}
+
+.header-3 {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin-left: 2.5rem;
+}
+
+.header-btn {
+    border: none;
+    background: #7e88bd;
+    border-radius: 2rem;
+    height: 2rem;
+    font-family: var(--font-textos);
+    transition: .1s;
+}
+
+.btn-a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-btn:hover {
+    transition: .7s;
+    background: #68709c;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1000px){
+    .support {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .support-1,
+    .support-2 {
+        margin-bottom: 0;
+    }
+
+    .support-1 {
+        margin-right: 20px;
+        /* Adicionando margem entre as divs support-1 e support-2 */
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-1 {
+        flex: 1 1 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-2 {
+        flex: 1 1 auto;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .header-3 {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .header-3 img {
+        margin-right: 10px;
+    }
+
+    .header-btn {
+        margin-left: 10px;
+    }
+
+}

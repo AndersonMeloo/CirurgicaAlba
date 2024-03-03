@@ -1,0 +1,152 @@
+.interface {
+    /* height: 100vh;*/
+    /*  scroll-snap-type: y mandatory;*/
+    /*overflow: scroll;*/
+}
+
+.interface-1 {
+    /*  height: 100vh;*/
+    /* scroll-snap-align: start;*/
+    /*    position: sticky;
+    top: 0;
+    left: 0;*/
+}
+
+.business {
+    /*background: url(../imagens/Rectangle\ 4.png);*/
+    background: linear-gradient(to bottom, #F7FCFE, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE);
+    display: flex;
+    justify-content: center;
+
+}
+
+.business-lt {
+    padding: 8rem 0;
+    justify-content: center;
+}
+
+.business-title {
+    font-family: var(--font-titulos);
+    font-size: 2rem;
+    color: #68709c;
+}
+
+.bs-tx1 {
+    padding: 1rem 0;
+    font-family: var(--font-titulos);
+    font-size: .9rem;
+    color: #586197;
+}
+
+.bs-tx2 {
+    padding-bottom: 1rem;
+    font-family: var(--font-textos);
+    font-size: 1rem;
+    color: black;
+}
+
+.business-text {
+    width: 50%;
+}
+
+.business-img {
+    width: 60%;
+}
+
+.business-ltd {
+    padding: 8rem 0;
+}
+
+.bs-lt-text {
+    padding: 1rem 0 1rem 0;
+    color: #68709c;
+    font-family: var(--font-textos);
+    font-size: 1.5rem;
+}
+
+.bs-lt-text:hover {
+    font-size: 1.7rem;
+    color: #586197;
+}
+
+.bs-btn1 {
+    width: 80%;
+    border: none;
+    background: #bebebe;
+    color: white;
+    font-size: var(--font-textos);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem 3rem 0 0;
+    transition: .1s;
+}
+
+.bs-btn2 {
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+
+.bs-btn1:hover {
+    background: #68709c;
+    transition: .6s;
+    width: 90%;
+}
+
+
+.business-btn {
+    width: 80%;
+    border: none;
+    background: #bebebe;
+    color: white;
+    font-size: var(--font-textos);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem 3rem 0 0;
+    transition: .1s;
+}
+
+.business-btn {
+    background: #68709c;
+    transition: .6s;
+    width: 90%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+    .business {
+        background: linear-gradient(to bottom, #F7FCFE, #D7E4FB, #DAE7FC, #E9F3FD, #F7FCFE);
+        display: block;
+        text-align: center;
+    }    
+    
+    .business-img {
+        width: 80%;
+    }
+    
+    .business-lt {
+        padding-bottom: 1rem;
+    }
+
+    .business-text  {
+        text-align: center;
+        width: 100%;        
+    }
+
+    .business-ltd {
+        padding: 1.5rem 0 1.5rem 0; 
+    }
+
+    .bs-btn1 {
+        width: 60%;
+        margin: auto;
+        margin-top: 0.5rem;
+    }
+    
+    .bs-btn1:hover {
+        width: 70%;
+    }
+
+    .business-tex {
+        margin: 1rem;
+    }
+}
